@@ -1,16 +1,18 @@
 {
   "expo": {
-    "name": "testapp",
+    "scheme": "testapp",
+    "name": "Functions App",
     "slug": "testapp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./src/assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -21,13 +23,20 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.aes.testapp",
+      "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./src/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./src/assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3794b718-0082-4199-bfad-97dd828f6f18"
+      }
     }
   }
 }
