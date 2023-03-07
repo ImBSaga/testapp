@@ -18,6 +18,7 @@ import {
 } from '../components/styles'
 import { BASE_URL } from '../config'
 import axios from 'axios'
+import * as ImagePicker from 'expo-image-picker'
 
 //Maps
 import * as Location from 'expo-location'
@@ -60,6 +61,9 @@ const Welcome = ({ route, navigation }) => {
           },
         })
         setUserData(response.data)
+        const {
+          status,
+        } = await ImagePicker.requestMediaLibraryPermissionsAsync()
       } catch {
         const response = route.params.data.user
         setUserDataGoogle(response)
