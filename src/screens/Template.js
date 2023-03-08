@@ -122,7 +122,7 @@ const Template = ({ route, navigation }) => {
   //News Stuff
   const [newsData, setNewsData] = useState([])
   const url =
-    'https://newsapi.org/v2/everything?q=apple&from=2023-01-10&to=2023-01-10&sortBy=popularity&apiKey=816e53258c3d4ac6b25d879f009d8989'
+    'https://newsapi.org/v2/everything?q=apple&from=2023-03-07&to=2023-03-07&sortBy=popularity&apiKey=816e53258c3d4ac6b25d879f009d8989'
   const getArticles = () => {
     fetch(url)
       .then((res) => res.json())
